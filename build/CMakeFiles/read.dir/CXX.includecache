@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cyt/workspace/stereo-calibration-master/popt_pp.h
+popt.h
+-
+
+/home/cyt/workspace/stereo-calibration-master/read_images.cpp
+opencv2/core/core.hpp
+-
+opencv2/highgui/highgui.hpp
+-
+opencv2/imgproc/imgproc.hpp
+-
+stdio.h
+-
+iostream
+-
+popt_pp.h
+/home/cyt/workspace/stereo-calibration-master/popt_pp.h
+

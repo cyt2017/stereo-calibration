@@ -1,0 +1,17 @@
+#!/bin/sh
+
+board_width=13
+board_height=13
+num_imgs=12
+square_size=30.0
+imgs_directory="./images/"
+#imgs_filename="left"
+#output_filename="cam_left.yml"
+
+./calibrate -w ${board_width} -h ${board_height} -n ${num_imgs} -s ${square_size} -d ${imgs_directory} -i "left" -o "cam_left.yml" -e "jpg"
+
+./calibrate -w ${board_width} -h ${board_height} -n ${num_imgs} -s ${square_size} -d ${imgs_directory} -i "right" -o "cam_right.yml" -e "jpg"
+
+./calibrate_stereo -n ${num_imgs} -u "cam_left.yml" -v "cam_right.yml" -L ${imgs_directory} -R ${imgs_directory} -l left -r right -o cam_stereo.yml
+
+

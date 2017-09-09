@@ -27,5 +27,5 @@ Compiled Object files
 *.out
 *.app
 
-
+build/
 calib_imgs/
